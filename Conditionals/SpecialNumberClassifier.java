@@ -17,11 +17,11 @@ public class CustomEvenFilter {
             }
         }
 
-        int lastDigit = Math.abs(num % 10);
+       
 
-        if (num % 2 == 0 && (lastDigit == 2 || lastDigit == 3 || lastDigit == 6 || lastDigit == 8 || lastDigit == 0)) {
+        if (num % 2 == 0  ) {
             System.out.println(num + " is divisible by 2");
-        } else {
+        } else{
             System.out.println(num + " is not divisible by 2");
         }
 
