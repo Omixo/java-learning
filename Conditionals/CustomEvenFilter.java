@@ -19,21 +19,21 @@ public class CustomEvenFilter {
                 }
             }
 
-            int lastDigit = Math.abs(num % 10);
+          
 
-            if (num % 2 == 0 && (lastDigit == 2 || lastDigit == 3 || lastDigit == 6 || lastDigit == 8 || lastDigit == 0)) {
-                System.out.println(num + " is divisible by 2 (custom rule)");
+            if (num % 2 == 0 ) {
+                System.out.println(num + " is divisible by 2 ");
             } else {
-                System.out.println(num + " is not divisible by 2 (custom rule)");
+                System.out.println(num + " is not divisible by 2 ");
             }
 
         
-            System.out.print("Do you want to check another number? (yes/no): ");
+            System.out.print("Do you want to check another number? (y/n): ");
             sc.nextLine(); 
             String choice = sc.nextLine().trim().toLowerCase();
 
-            if (!choice.equals("yes")) {
-                System.out.println("Program ended. Thank you!");
+            if (!choice.equals("y")) {
+                System.out.println("salaam sahab🫡. Thank you!");
                 break;
             }
         }
