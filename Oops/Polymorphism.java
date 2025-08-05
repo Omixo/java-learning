@@ -10,9 +10,18 @@ class Dog extends Animal {
     }
 }
 
+class Tiger extends Animal {
+    void makeSound() {
+        System.out.println("Roar");
+    }
+}
+
 public class Polymorphism {
     public static void main(String[] args) {
-        Animal myAnimal = new Dog();
-        myAnimal.makeSound(); // Outputs: Bark
+        Animal myDog = new Dog();
+        Animal myTiger = new Tiger();
+
+        myDog.makeSound();    // Outputs: Bark
+        myTiger.makeSound();  // Outputs: Roar
     }
 }
